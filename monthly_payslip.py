@@ -1,5 +1,8 @@
 import csv
 
+def monthly_payroll():
+    ranges = [(0, 18200, 0), (182001, 37000, .19), (37001, 80000, .325), (80001, 180000, .37), (180001,)]
+
 
 with open('monthly_payslip.csv') as csvfile:
     pay = csv.reader(csvfile)
