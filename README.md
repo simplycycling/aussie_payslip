@@ -22,3 +22,9 @@ Hopefully, this will give some insight into my thought process as I broke this t
     5. Determine the super rate
 4. Format the output
 5. Move on to the next row
+
+### TODO
+
+1. Too much repeated code - turn that into a function
+2. Write a Django front-end, so that .csv files can be uploaded
+3. Learn how to write a Django front-end.
