@@ -62,5 +62,5 @@ target/
 
 # System files and directories
 
-.idea
-.DS_Store
+.idea/
+.DS_Store/
