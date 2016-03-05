@@ -2,8 +2,8 @@ import csv
 import unittest
 
 
-"""This script starts out by importing the csv file "monthly_payslip.csv". It can easily be modified to use
-any other csv file, so long as it's in the following format:
+"""This script starts out by asking for a csv file to be entered. Included in the repo is a csv file named
+"monthly_payslip.csv". It can use this csv, or any other csv file, so long as it's in the following format:
 
 first name,last name,yearly gross pay,super,pay period
 
@@ -16,7 +16,7 @@ or
 March 01 - March 31
 
 Pretty simple, I'm sure you get the picture."""
-with open('monthly_payslip.csv') as csvfile:
+with open(input('Please enter the csv filename: ')) as csvfile:
     pay = csv.reader(csvfile)
 
 
