@@ -1,6 +1,15 @@
 import csv
+import unittest
 
 
+"""This script starts out by importing the csv file "monthly_payslip.csv". It can easily be modified to use
+any other csv file, so long as it's in the following format:
+first name,last name,yearly gross pay,super,pay period
+with the pay period being in the format of:
+01 March – 31 March
+or
+March 01 - March 31
+Pretty simple, I'm sure you get the picture."""
 with open('monthly_payslip.csv') as csvfile:
     pay = csv.reader(csvfile)
 
