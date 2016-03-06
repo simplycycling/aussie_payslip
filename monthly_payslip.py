@@ -19,9 +19,9 @@ Pretty simple, I'm sure you get the picture."""
 with open(input('Please enter the csv filename: ')) as csvfile:
     pay = csv.reader(csvfile)
 
-
+    # Ranges = Lower end of tax bracket, higher end of tax bracket, super, deductable
     def monthly_payroll():
-        ranges = [(0, 18200, 0, 0), (182001, 37000, .19, 0), (37001, 80000, .325, 3572),
+        ranges = [(0, 18200, 0, 0), (18201, 37000, .19, 0), (37001, 80000, .325, 3572),
                   (80001, 180000, .37, 17547), (180001, 2**1000, .45, 54547)]
 
         def check_taxes(value, value2, gross_income):
