@@ -30,7 +30,7 @@ with open(input('Please enter the csv filename: ')) as csvfile:
                 maximum = rng[1]
                 rate = rng[2]
                 base_tax = rng[3]
-                if value in range(minimum, maximum):
+                if minimum < value < maximum:
                     if base_tax == 0:
                         income_tax = round(((value - minimum - 1) * rate) / 12)
                     else:
