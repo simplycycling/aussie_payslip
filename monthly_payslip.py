@@ -1,5 +1,4 @@
 import csv
-import unittest
 
 
 """This script starts out by asking for a csv file to be entered. Included in the repo is a csv file named
